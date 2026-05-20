@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title
+        data-en="AI4All Sri Lanka"
+        data-si="AI4All ශ්‍රී ලංකා"
+        data-ta="AI4All இலங்கை"
+    >AI4All Sri Lanka</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/slide_show.css">
+    <link rel="stylesheet" href="assets/css/index_styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+<header id="header_main"></header>
+
+<main class="home-minimal-refined">
+
+    <div class="hero-ai-shell">
+        <canvas class="hero-ai-canvas" id="heroAiCanvas" aria-hidden="true"></canvas>
+
+        <!-- HERO INTRO -->
+        <section class="hero-minimal">
+            <div class="container">
+                <div class="hero-minimal-content">
+                    <span
+                        class="hero-minimal-kicker"
+                        data-i18n
+                        data-en="National AI Learning Initiative"
+                        data-si="ජාතික AI ඉගෙනුම් වැඩසටහන"
+                        data-ta="தேசிய AI கற்றல் முயற்சி"
+                    >National AI Learning Initiative</span>
+
+                    <h1
+                        data-i18n
+                        data-en="AI4All Sri Lanka"
+                        data-si="AI4All ශ්‍රී ලංකා"
+                        data-ta="AI4All இலங்கை"
+                    >AI4All Sri Lanka</h1>
+
+                    <p
+                        data-i18n
+                        data-en="A Sri Lankan learning platform dedicated to empowering learners with practical and accessible Artificial Intelligence education for the future."
+                        data-si="අනාගතය සඳහා ප්‍රායෝගික හා පහසුවෙන් ප්‍රවේශ විය හැකි කෘතිම බුද්ධි අධ්‍යාපනයෙන් ඉගෙනුම්කරුවන් සවිබල ගැන්වීමට කැපවූ ශ්‍රී ලාංකීය ඉගෙනුම් වේදිකාවකි."
+                        data-ta="எதிர்காலத்திற்கான நடைமுறைசார் மற்றும் எளிதில் அணுகக்கூடிய செயற்கை நுண்ணறிவு கல்வியின் மூலம் கற்போரை மேம்படுத்துவதற்காக அர்ப்பணிக்கப்பட்டுள்ள இலங்கையின் ஓர் கற்றல் தளம்."
+                    >
+                        A Sri Lankan learning platform dedicated to empowering learners with practical and accessible Artificial Intelligence education for the future.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FULL SLIDESHOW -->
+        <section class="hero-slideshow-section">
+            <div class="container">
+                <div class="hero-slideshow-wrap">
+                    <div class="slideshow-container" id="slideshowContainer">
+                        <div class="slides-wrapper" id="slidesWrapper"></div>
+                        <div class="slide-counter" id="slideCounter">1/5</div>
+                        <div class="controls">
+                            <button class="control-btn" id="prevBtn" title="Previous slide">❮</button>
+                            <button class="control-btn" id="nextBtn" title="Next slide">❯</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS -->
+        <section class="stats-refined-section">
+            <div class="container">
+                <div class="stats-refined-grid">
+                    <div class="stats-refined-card stats-refined-card-language">
+                        <h3>En සිං த</h3>
+                        <p
+                            data-i18n
+                            data-en="Learn in your Language"
+                            data-si="ඔබේ භාෂාවෙන් ඉගෙන ගන්න"
+                            data-ta="உங்கள் மொழியில் கற்கவும்"
+                        >Learn in your Language</p>
+                    </div>
+
+                    <div class="stats-refined-card">
+                        <h3>3846</h3>
+                        <p
+                            data-i18n
+                            data-en="Total enrolled"
+                            data-si="මුළු ලියාපදිංචි වූ සංඛ්‍යාව"
+                            data-ta="பதிவுசெய்தவர்கள் மொத்த எண்ணிக்கை"
+                        >Total enrolled</p>
+                    </div>
+
+                    <div class="stats-refined-card">
+                        <h3>62</h3>
+                        <p
+                            data-i18n
+                            data-en="Number Of Classes"
+                            data-si="පන්ති ගණන"
+                            data-ta="வகுப்புகளின் மொத்த எண்ணிக்கை"
+                        >Number Of Classes</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- FOCUS -->
+        <section class="focus-section" id="program-focus">
+                <canvas class="matrix-bg-canvas section-matrix focus-matrix" id="focusMatrixCanvas" aria-hidden="true"></canvas>
+                
+                <div class="container">
+                <div class="section-heading centered">
+                    <span
+                        class="section-kicker"
+                        data-i18n
+                        data-en="Platform Focus"
+                        data-si="වේදිකාවේ අවධානය"
+                        data-ta="தளத்தின் நோக்கம்"
+                    >Platform Focus</span>
+
+                    <h2
+                        data-i18n
+                        data-en="Academic, Practical, and Nationally Relevant Learning"
+                        data-si="ශාස්ත්‍රීය, ප්‍රායෝගික සහ ජාතික වශයෙන් අදාළ ඉගෙනුම"
+                        data-ta="கல்விசார், நடைமுறை மற்றும் தேசிய முக்கியத்துவமுள்ள கற்றல்"
+                    >Academic, Practical, and Nationally Relevant Learning</h2>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3
+                            data-i18n
+                            data-en="Empowering Educators"
+                            data-si="අධ්‍යාපකයන් සවිබල ගැන්වීම"
+                            data-ta="ஆசிரியர்களை வலுப்படுத்துதல்"
+                        >Empowering Educators</h3>
+                        <p
+                            data-i18n
+                            data-en="Helping teachers understand and introduce AI concepts in meaningful and approachable ways."
+                            data-si="අධ්‍යාපකයන් සවිබල ගැන්වීම: ගුරුවරුන්ට කෘත්‍රිම බුද්ධි (AI) සංකල්ප අර්ථවත් සහ පහසුවෙන් අවබෝධ කරගත හැකි ආකාරයෙන් ඉගැන්වීම සහ හඳුන්වා දීම සඳහා සහාය වීම."
+                            data-ta="ஆசிரியர்கள் AI கருத்துகளை அர்த்தமுள்ள மற்றும் எளிதில் அணுகக்கூடிய வகையில் புரிந்து அறிமுகப்படுத்த உதவுதல்."
+                        >Helping teachers understand and introduce AI concepts in meaningful and approachable ways.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3
+                            data-i18n
+                            data-en="Supporting Students"
+                            data-si="ශිෂ්‍යයන්ට සහාය වීම"
+                            data-ta="மாணவர்களை ஆதரித்தல்"
+                        >Supporting Students</h3>
+                        <p
+                            data-i18n
+                            data-en="Creating better access to AI learning for undergraduates and vocational education learners."
+                            data-si="පළමු උපාධිධාරීන් සහ වෘත්තීය අධ්‍යාපන ඉගෙනුම්කරුවන් සඳහා AI ඉගෙනුමට වඩා හොඳ ප්‍රවේශයක් සැපයීම."
+                            data-ta="பல்கலைக்கழக மாணவர்கள் மற்றும் தொழில்முறை கல்வி கற்றலாளர்களுக்கு AI கற்றலுக்கான சிறந்த அணுகலை உருவாக்குதல்."
+                        >Creating better access to AI learning for undergraduates and vocational education learners.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3
+                            data-i18n
+                            data-en="Language Accessibility"
+                            data-si="භාෂා ප්‍රවේශතාව"
+                            data-ta="மொழி அணுகல்"
+                        >Language Accessibility</h3>
+                        <p
+                            data-i18n
+                            data-en="Promoting broader participation through multilingual learning experiences and outreach."
+                            data-si="බහුභාෂා ඉගෙනුම් අත්දැකීම් සහ ප්‍රවේශ වැඩසටහන් මඟින් පුළුල් සහභාගීත්වය ප්‍රවර්ධනය කිරීම."
+                            data-ta="பன்மொழிக் கற்றல் அனுபவங்கள் மற்றும் வெளிப்பரப்புச் செயல்பாடுகள் ஊடாக பரந்துபட்ட பங்கேற்பை ஊக்குவித்தல்."
+                        >Promoting broader participation through multilingual learning experiences and outreach.</p>
+                    </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3
+                            data-i18n
+                            data-en="National Readiness"
+                            data-si="ජාතික සූදානම"
+                            data-ta="தேசியத் தயார் நிலை"
+                        >National Readiness</h3>
+                        <p
+                            data-i18n
+                            data-en="Contributing to digital capacity building and future workforce development in Sri Lanka."
+                            data-si="ශ්‍රී ලංකාවේ ඩිජිටල් හැකියාවන් ගොඩනැගීම සහ අනාගත ශ්‍රම බලකා සංවර්ධනයට දායක වීම."
+                            data-ta="இலங்கையின் டிஜிட்டல் திறன் மற்றும் எதிர்காலப் பணியாளர் அபிவிருத்திக்குப் பங்களித்தல்."
+                        >Contributing to digital capacity building and future workforce development in Sri Lanka.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- REGISTRATION -->
+        <section class="registration-refined-section" id="register-now">
+            <div class="container">
+                <div class="section-heading centered">
+                    <span
+                        class="section-kicker"
+                        data-i18n
+                        data-en="Registration"
+                        data-si="ලියාපදිංචිය"
+                        data-ta="பதிவு செய்தல்"
+                    >Registration</span>
+
+                    <h2
+                        data-i18n
+                        data-en="Choose the Right Registration Path"
+                        data-si="නිවැරදි ලියාපදිංචි මාර්ගය තෝරන්න"
+                        data-ta="சரியான பதிவு பாதையைத் தேர்ந்தெடுக்கவும்"
+                    >Choose the Right Registration Path</h2>
+
+                    <p
+                        data-i18n
+                        data-en="Please select your category to access the correct registration form."
+                        data-si="නිවැරදි ලියාපදිංචි පෝරමයට ප්‍රවේශ වීමට කරුණාකර ඔබගේ කාණ්ඩය තෝරන්න."
+                        data-ta="சரியான பதிவு படிவத்தை அணுக உங்கள் பிரிவைத் தேர்ந்தெடுக்கவும்."
+                    >Please select your category to access the correct registration form.</p>
+                </div>
+
+                <div class="registration-container">
+                    <div class="registration-card">
+                        <div class="registration-card-top">
+                            <div class="registration-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div
+                                class="card-title"
+                                data-i18n
+                                data-en="University Undergraduates"
+                                data-si="විශ්වවිද්‍යාල උපාධි අපේක්ෂකයින්"
+                                data-ta="பல்கலைக்கழக இளநிலை மாணவர்கள்"
+                            >University Undergraduates</div>
+                        </div>
+
+                        <p
+                            class="registration-desc"
+                            data-i18n
+                            data-en="For undergraduate learners seeking access to practical and accessible AI learning opportunities."
+                            data-si="ප්‍රායෝගික සහ පහසුවෙන් ප්‍රවේශ විය හැකි AI ඉගෙනුම් අවස්ථා සොයන උපාධි අපේක්ෂක ඉගෙනුම්කරුවන් සඳහා."
+                            data-ta="நடைமுறை மற்றும் எளிதில் அணுகக்கூடிய செயற்கை நுண்ணறிவுக் கற்றல் வாய்ப்புகளை நாடும் பல்கலைக்கழக இளநிலை மாணவர்களுக்கானது."
+                        >
+                            For undergraduate learners seeking access to practical and accessible AI learning opportunities.
+                        </p>
+
+                        <div class="card-links">
+                            <a
+                                href="https://forms.gle/yNFcn49Wr1H9Qju3A"
+                                class="btn-form-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-i18n
+                                data-en="Link to the Form"
+                                data-si="පෝරමයට සබැඳිය"
+                                data-ta="படிவத்திற்கான இணைப்பு"
+                            >
+                                Link to the Form
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="registration-card">
+                        <div class="registration-card-top">
+                            <div class="registration-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <div
+                                class="card-title"
+                                data-i18n
+                                data-en="TVET Students"
+                                data-si="TVET ශිෂ්‍යයන්"
+                                data-ta="TVET மாணவர்கள்"
+                            >TVET Students</div>
+                        </div>
+
+                        <p
+                            class="registration-desc"
+                            data-i18n
+                            data-en="For vocational and technical learners joining the program through their regional pathway."
+                            data-si="කලාපීය මාර්ගය හරහා වැඩසටහනට එක්වන වෘත්තීය සහ තාක්ෂණික ඉගෙනුම්කරුවන් සඳහා."
+                            data-ta="பிராந்திய பாதையின் மூலம் திட்டத்தில் சேரும் தொழில்முறை மற்றும் தொழில்நுட்ப மாணவர்களுக்கானது."
+                        >
+                            For vocational and technical learners joining the program through their regional pathway.
+                        </p>
+
+                        <div class="card-links">
+                            <a
+                                href="https://forms.gle/JivCVxj4JYbXUSHw6"
+                                class="btn-form-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-i18n
+                                data-en="Link to the Form for North and Eastern Provinces"
+                                data-si="උතුරු සහ නැගෙනහිර පළාත් සඳහා පෝරමයට සබැඳිය"
+                                data-ta="வடக்கு மற்றும் கிழக்கு மாகாணங்களுக்கான படிவத்திற்கான இணைப்பு"
+                            >
+                                Link to the Form for North and Eastern Provinces
+                            </a>
+                            <a
+                                href="https://forms.gle/Vayv4WUeo97VT2oZ9"
+                                class="btn-form-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-i18n
+                                data-en="Link to the Form for Other Provinces"
+                                data-si="අනෙකුත් පළාත් සඳහා පෝරමයට සබැඳිය"
+                                data-ta="ஏனைய மாகாணங்களுக்கான படிவத்திற்கான இணைப்பு"
+                            >
+                                Link to the Form for Other Provinces
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="registration-card">
+                        <div class="registration-card-top">
+                            <div class="registration-icon">
+                                <i class="fas fa-school"></i>
+                            </div>
+                            <div
+                                class="card-title"
+                                data-i18n
+                                data-en="School Teachers"
+                                data-si="පාසල් ගුරුවරුන්"
+                                data-ta="பாடசாலை  ஆசிரியர்கள்"
+                            >School Teachers</div>
+                        </div>
+
+                        <p
+                            class="registration-desc"
+                            data-i18n
+                            data-en="For teachers interested in strengthening AI literacy and future-ready educational engagement."
+                            data-si="AI දැනුම සහ අනාගතයට සූදානම් අධ්‍යාපනික සම්බන්ධතාව වර්ධනය කිරීමට උනන්දුවක් දක්වන ගුරුවරුන් සඳහා."
+                            data-ta="செயற்கை நுண்ணறிவு அறிவாற்றலை வலுப்படுத்துவதிலும், எதிர்காலத்திற்குத் தயாரான கல்வி ஈடுபாட்டிலும் ஆர்வமுள்ள பாடசாலை ஆசிரியர்களுக்கானது."
+                        >
+                            For teachers interested in strengthening AI literacy and future-ready educational engagement.
+                        </p>
+
+                        <div class="card-links">
+                            <a
+                                href="https://forms.gle/dTSrE1aCpxuuCX357"
+                                class="btn-form-link"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                data-i18n
+                                data-en="Link for School Teachers"
+                                data-si="පාසල් ගුරුවරුන් සඳහා සබැඳිය"
+                                data-ta="பாடசாலை ஆசிரியர்களுக்கான படிவத்திற்கான இணைப்பு"
+                            >
+                                Link for School Teachers
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- IMPACT -->
+        <section class="impact-section" id="program-highlights">
+            <canvas class="matrix-bg-canvas section-matrix" id="matrixBgCanvas" aria-hidden="true"></canvas>
+            <div class="container">
+                <div class="section-heading centered">
+                    <span
+                        class="section-kicker"
+                        data-i18n
+                        data-en="Why This Matters"
+                        data-si="මෙය වැදගත් වන්නේ ඇයි"
+                        data-ta="இது ஏன் முக்கியமானது"
+                    >Why This Matters</span>
+
+                    <h2
+                        data-i18n
+                        data-en="A Platform with Academic and Social Impact"
+                        data-si="අධ්‍යාපනික සහ සමාජීය බලපෑමක් ඇති වේදිකාවක්"
+                        data-ta="கல்விசார் மற்றும் சமூகத் தாக்கத்தைக் கொண்ட ஒரு தளம்"
+                    >A Platform with Academic and Social Impact</h2>
+                </div>
+
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <h3
+                            data-i18n
+                            data-en="Accessible Learning"
+                            data-si="ප්‍රවේශය ඇති ඉගෙනුම් අවස්ථා"
+                            data-ta="எளிதில் அணுகக்கூடிய கற்றல்"
+                        >Accessible Learning</h3>
+                        <p
+                            data-i18n
+                            data-en="Designed to help more learners engage with AI concepts in a way that feels approachable and relevant."
+                            data-si="වැඩි ඉගෙනුම්කරුවන් පිරිසකට පහසුවෙන් සහ අදාළ ලෙස AI සංකල්ප සමඟ සම්බන්ධ වීමට උපකාර වන ලෙස නිර්මාණය කර ඇත."
+                            data-ta="செயற்கை நுண்ணறிவுக் கருத்துகளுடன் எளிதில் அணுகக்கூடியதாகவும் பொருத்தமானதாகவும் உணரப்படும் விதத்தில் பல கற்போரை ஈடுபடுத்தும் வகையில் வடிவமைக்கப்பட்டுள்ளது."
+                        >Designed to help more learners engage with AI concepts in a way that feels approachable and relevant.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3
+                            data-i18n
+                            data-en="Future Skills"
+                            data-si="අනාගත කුසලතා"
+                            data-ta="எதிர்காலத் திறன்கள்"
+                        >Future Skills</h3>
+                        <p
+                            data-i18n
+                            data-en="Supports learners and educators in preparing for the increasing role of AI across education and work."
+                            data-si="අධ්‍යාපනය සහ රැකියාව පුරා AI හි වර්ධනය වන භූමිකාව සඳහා සූදානම් වීමට ඉගෙනුම්කරුවන්ට සහ අධ්‍යාපකයන්ට සහාය වේ."
+                            data-ta="கல்வி மற்றும் பணித்துறைகளில் செயற்கை நுண்ணறிவின் வளர்ந்துவரும் பங்கிற்குத் தயாராவதில் கற்போருக்கும் கல்வியாளர்களுக்கும் உதவுகிறது."
+                        >Supports learners and educators in preparing for the increasing role of AI across education and work.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3
+                            data-i18n
+                            data-en="National Development"
+                            data-si="ජාතික සංවර්ධනය"
+                            data-ta="தேசிய வளர்ச்சி"
+                        >National Development</h3>
+                        <p
+                            data-i18n
+                            data-en="Contributes to broader digital transformation goals by building stronger AI awareness and readiness."
+                            data-si="වඩා ශක්තිමත් AI දැනුවත්භාවය සහ සූදානම ගොඩනඟමින් විශාල ඩිජිටල් පරිවර්තන ඉලක්ක සඳහා දායක වේ."
+                            data-ta="மேலும் வலுவான செயற்கை நுண்ணறிவு விழிப்புணர்வையும் தயார்நிலையையும் கட்டியெழுப்புவதன் மூலம் பரந்துபட்ட டிஜிட்டல் மாற்றத்திறனிலக்குகளுக்குப் பங்களிக்கிறது."
+                        >Contributes to broader digital transformation goals by building stronger AI awareness and readiness.</p>
+                    </div>
+
+                    <div class="highlight-card">
+                        <h3
+                            data-i18n
+                            data-en="Inclusive Participation"
+                            data-si="සියල්ලන්ගේ සහභාගීත්වය"
+                            data-ta="அனைவரையும் உள்ளடக்கிய பங்கேற்பு"
+                        >Inclusive Participation</h3>
+                        <p
+                            data-i18n
+                            data-en="Expands opportunity beyond a narrow technical audience and invites wider public engagement with AI."
+                            data-si="සීමිත තාක්ෂණික ප්‍රේක්ෂක පිරිසකට පමණක් නොව, පුළුල් මහජන සහභාගීත්වයක් AI සමඟ සම්බන්ධ කරයි."
+                            data-ta="குறுகிய தொழில்நுட்ப வட்டாரத்தைத் தாண்டி வாய்ப்புகளை விரிவுபடுத்தி, AI உடன் பரந்த பொதுமக்கள் ஈடுபாட்டை அழைக்கிறது."
+                        >Expands opportunity beyond a narrow technical audience and invites wider public engagement with AI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+<section class="testimonials-movie-section" id="student-testimonials">
+    <div class="container">
+        <div class="section-heading centered">
+            <span
+                class="section-kicker"
+                data-i18n
+                data-en="Student Voices"
+                data-si="ශිෂ්‍ය අදහස්"
+                data-ta="மாணவர் கருத்துகள்"
+            >Student Voices</span>
+
+            <h2
+                data-i18n
+                data-en="What Learners Are Saying"
+                data-si="ඉගෙනුම්කරුන්ගේ අදහස්"
+                data-ta="கற்போர் கூறுவது"
+            >What Learners Are Saying</h2>
+
+            <p
+                data-i18n
+                data-en="Short reflections from learners who explored AI through the platform."
+                data-si="වේදිකාව හරහා AI අත්දැකීම් ලබාගත් ඉගෙනුම්කරුවන්ගේ කෙටි අදහස්."
+                data-ta="இத்தளத்தின் ஊடாக கற்பவர்கள் கற்றலில் ஈடுபட்டபோது கிடைத்த அனுபவங்களின் சுருக்கமான பிரதிபலிப்புகள்."
+            >Short reflections from learners who explored AI through the platform.</p>
+        </div>
+
+        <div class="testimonials-movie-shell">
+            <div class="testimonials-edge-fade testimonials-edge-fade-left"></div>
+            <div class="testimonials-edge-fade testimonials-edge-fade-right"></div>
+
+            <div class="testimonials-movie-track">
+                <!-- Row 1: scrolls left -->
+                <div class="testimonials-row testimonials-row-top">
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I am Fatima Adinas, an ICT second year student of Srebrenica University, Sri Lanka. I am happy to share my feedback about the AI workshop and sincerely thank the facilitators, organization committee, and staff for conducting such a valuable workshop. The LMS provided learning and quizzes in Tamil, English, and Sinhala, which helped students understand easily in their own language. The facilitators, especially Dr. Pramila Gamage and the instructors, explained the concepts clearly and also supported students with technical issues. I learned a lot about AI and machine learning from this workshop, and I thank everyone involved.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">FA</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Fatima Adinas</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I started this course with a lot of interest and zero awareness of the subject. I’m so glad to know that I’m able to handle Al to enhance my performance as a teacher and also for the betterment of my personal life. All the gratitude and credit go to you madam first for the inspiration and then for the guidance and kindness you displayed. I feel improved and confident now. Your invaluable service and the commitment behind will ever be remembered with much respect. Thank you again to everyone involved.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">CA</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Chethana Amarasooriya</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">First of all, I would like to thank the AI Fundamentals course staff. Through this course, I learned the basic concepts of AI, how AI tools work, and how they can support teaching and learning. The course also helped me understand the ethical use of AI and the importance of critical thinking. I now use AI tools to gather information, prepare lesson plans, find research materials, and save time in my academic work. Finally, I believe AI is a valuable tool when used ethically.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">MW</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Mihiri Wijesinghe</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I would like to sincerely thank the AI platform and course staff for the guidance and support provided throughout my learning journey. The platform helped me understand difficult concepts in a simple and flexible way, which improved my confidence and learning experience. I learned how to use AI tools effectively for education, research, and daily tasks. AI has helped me save time, improve my skills, and approach challenges with more confidence and curiosity. I truly appreciate the knowledge and opportunities I gained through this experience.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">R</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Ranjith</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">Thank you so much to the AI4All team for the value added to our lives. As teachers we should always a step forward to our students. This is really important to manage our future in the education field. Thank you so much for the opportunity and it will be so special to be the first team of the central province.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">CJ</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Chamara Jayasinghe</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">Since completing my AI training, I have noticed a significant improvement in my professional efficiency and teaching quality. As a Physics teacher handling both school and private tuition classes, AI has greatly reduced the time needed for preparing lesson plans, essay questions, and MCQs for the A/L syllabus. Tasks that previously took hours can now be completed much faster, helping me save valuable time and focus more on student support and research.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">RR</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Rasika Rathnayaka</h3>
+                                        <p class="testimonial-role">Physics Teacher</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- duplicate set for seamless loop -->
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I am Fatima Adinas, an ICT second year student of Srebrenica University, Sri Lanka. I am happy to share my feedback about the AI workshop and sincerely thank the facilitators, organization committee, and staff for conducting such a valuable workshop. The LMS provided learning and quizzes in Tamil, English, and Sinhala, which helped students understand easily in their own language. The facilitators, especially Dr. Pramila Gamage and the instructors, explained the concepts clearly and also supported students with technical issues. I learned a lot about AI and machine learning from this workshop, and I thank everyone involved.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">FA</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Fatima Adinas</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I started this course with a lot of interest and zero awareness of the subject. I’m so glad to know that I’m able to handle Al to enhance my performance as a teacher and also for the betterment of my personal life. All the gratitude and credit go to you madam first for the inspiration and then for the guidance and kindness you displayed. I feel improved and confident now. Your invaluable service and the commitment behind will ever be remembered with much respect. Thank you again to everyone involved.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">CA</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Chethana Amarasooriya</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">First of all, I would like to thank the AI Fundamentals course staff. Through this course, I learned the basic concepts of AI, how AI tools work, and how they can support teaching and learning. The course also helped me understand the ethical use of AI and the importance of critical thinking. I now use AI tools to gather information, prepare lesson plans, find research materials, and save time in my academic work. Finally, I believe AI is a valuable tool when used ethically.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">MW</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Mihiri Wijesinghe</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I would like to sincerely thank the AI platform and course staff for the guidance and support provided throughout my learning journey. The platform helped me understand difficult concepts in a simple and flexible way, which improved my confidence and learning experience. I learned how to use AI tools effectively for education, research, and daily tasks. AI has helped me save time, improve my skills, and approach challenges with more confidence and curiosity. I truly appreciate the knowledge and opportunities I gained through this experience.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">R</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Ranjith</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">Thank you so much to the AI4All team for the value added to our lives. As teachers we should always a step forward to our students. This is really important to manage our future in the education field. Thank you so much for the opportunity and it will be so special to be the first team of the central province.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">CJ</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Chamara Jayasinghe</h3>
+                                        <p class="testimonial-role">AI4All Participant</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">Since completing my AI training, I have noticed a significant improvement in my professional efficiency and teaching quality. As a Physics teacher handling both school and private tuition classes, AI has greatly reduced the time needed for preparing lesson plans, essay questions, and MCQs for the A/L syllabus. Tasks that previously took hours can now be completed much faster, helping me save valuable time and focus more on student support and research.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">RR</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Rasika Rathnayaka</h3>
+                                        <p class="testimonial-role">Physics Teacher</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Row 2: scrolls right -->
+                <div class="testimonials-row testimonials-row-bottom">
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">After the AI training, I noticed a clear improvement in my productivity and time management. Tasks such as writing assignments, creating captions, and organizing ideas now take much less time with the help of AI tools. This has helped me work more efficiently, save time, and focus better on my studies. I consider the AI training programme a valuable and practical learning experience, and I would recommend it to others because it is easy to understand, useful, and improves the quality of work.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">SH</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Sadheena Hakeem</h3>
+                                        <p class="testimonial-role">Undergraduate Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">This programme has had a positive impact on both my professional work and daily activities by helping me use more efficient, technology-supported methods. I now use AI tools such as ChatGPT for drafting emails, improving technical writing, and understanding construction-related concepts, which has saved time and improved the quality of my work. I am also using this opportunity for my degree research and thesis work, focusing on the use of Artificial Intelligence in early-stage cost estimation.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">CB</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Chamindu Bandara Dissanayake</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">My experience with the AI training programme has been very positive. The online sessions were engaging and easy to follow, even for someone without a technical background. One of the most memorable parts was the module on prompt engineering, where I learned how to ask better questions and get more accurate results from AI tools. This helped me understand how to use AI more effectively in my work. As a suggestion, it would be helpful to have more practical sessions or examples so students can practice more during the class.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">ZZ</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Zainudeen Zalin</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I highly recommend this programme because it improves productivity and AI knowledge. I am really grateful to my trainer and LEARN. Thank you so much and good job.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">LH</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Layan Hasaranga Gunarathna</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">This programme teaches AI in a simple and easy way, making it understandable even for beginners. It covers important topics such as AI tools and the use of AI in education, business, and daily work. I would recommend this programme to others because it helps save time, improve productivity, and develop valuable digital skills for today’s world.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">OM</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Oshan Methsara</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card">
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">In this fast-moving world, AI applications are very important as they can complete many tasks within a few seconds. AI has also created many job opportunities. Therefore, having basic knowledge about AI is important, as many fields such as medicine and education are adapting to Artificial Intelligence. This training programme explains how to use AI effectively, including its advantages and disadvantages. Because of this, I would recommend this programme to another individual.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">VL</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Vinuba Luckshana Mohanraj</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- duplicate set for seamless loop -->
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">After the AI training, I noticed a clear improvement in my productivity and time management. Tasks such as writing assignments, creating captions, and organizing ideas now take much less time with the help of AI tools. This has helped me work more efficiently, save time, and focus better on my studies. I consider the AI training programme a valuable and practical learning experience, and I would recommend it to others because it is easy to understand, useful, and improves the quality of work.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">SH</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Sadheena Hakeem</h3>
+                                        <p class="testimonial-role">Undergraduate Student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">This programme has had a positive impact on both my professional work and daily activities by helping me use more efficient, technology-supported methods. I now use AI tools such as ChatGPT for drafting emails, improving technical writing, and understanding construction-related concepts, which has saved time and improved the quality of my work. I am also using this opportunity for my degree research and thesis work, focusing on the use of Artificial Intelligence in early-stage cost estimation.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">CB</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Chamindu Bandara Dissanayake</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">My experience with the AI training programme has been very positive. The online sessions were engaging and easy to follow, even for someone without a technical background. One of the most memorable parts was the module on prompt engineering, where I learned how to ask better questions and get more accurate results from AI tools. This helped me understand how to use AI more effectively in my work. As a suggestion, it would be helpful to have more practical sessions or examples so students can practice more during the class.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">ZZ</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Zainudeen Zalin</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">I highly recommend this programme because it improves productivity and AI knowledge. I am really grateful to my trainer and LEARN. Thank you so much and good job.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">LH</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Layan Hasaranga Gunarathna</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">This programme teaches AI in a simple and easy way, making it understandable even for beginners. It covers important topics such as AI tools and the use of AI in education, business, and daily work. I would recommend this programme to others because it helps save time, improve productivity, and develop valuable digital skills for today’s world.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">OM</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Oshan Methsara</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-message-card" aria-hidden=”true”>
+                        <div class="testimonial-message-inner">
+                            <div class="testimonial-quote-mark">”</div>
+                            <div class="testimonial-card-body">
+                                <p class="testimonial-text">In this fast-moving world, AI applications are very important as they can complete many tasks within a few seconds. AI has also created many job opportunities. Therefore, having basic knowledge about AI is important, as many fields such as medicine and education are adapting to Artificial Intelligence. This training programme explains how to use AI effectively, including its advantages and disadvantages. Because of this, I would recommend this programme to another individual.</p>
+                                <div class="testimonial-meta">
+                                    <div class="testimonial-avatar">VL</div>
+                                    <div class="testimonial-author-info">
+                                        <h3>Vinuba Luckshana Mohanraj</h3>
+                                        <p class="testimonial-role">TVET student</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        
+
+    </main>
+
+    <footer id="footer_main"></footer>
+
+    <script src="assets/js/utils.js?v=3.1"></script>
+    <script src="assets/js/script.js?v=3.1"></script>
+    <script src="assets/js/home.js?v=3.1"></script>
+    <script src="assets/js/lang-tog-index.js?v=3.1"></script>
+    <script src="assets/js/slide_show.js?v=3.1"></script>
+</body>
+</html>

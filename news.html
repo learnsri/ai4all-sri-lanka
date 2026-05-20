@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISL News</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/news.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header id="header_main">
+        <!-- Header content will be loaded by utils.js -->
+    </header>
+    <main>
+    <section class="scholarships-header">
+    <div class="container">
+        <h1
+            id="title_news"
+            data-i18n
+            data-en="Latest News"
+            data-si="නවතම පුවත්"
+            data-ta="சமீபத்திய செய்திகள்"
+        >Latest News</h1>
+
+        <p
+            data-i18n
+            data-en="Stay updated with the latest announcements, articles, and insights."
+            data-si="නවතම නිවේදන, ලිපි සහ අවබෝධයන් සමඟ යාවත්කාලීනව සිටින්න."
+            data-ta="சமீபத்திய அறிவிப்புகள், கட்டுரைகள் மற்றும் நுண்ணோக்குப் புதுப்பிப்புகளுக்காக எம்முடன் இணைந்திருங்கள்."
+        >
+            Stay updated with the latest announcements, articles, and insights.
+        </p>
+    </div>
+</section>
+    <br><br><br><br>
+    <section class="scholarships-listing">
+        <div class="container">
+            <div class="scholarships-grid" id="newsGrid">
+                <!-- News cards will be dynamically inserted here -->
+            </div>
+            <div class="no-results" id="noNews" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No news found</h3>
+                <p>There are no news articles available at the moment.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer id="footer_main">
+        <!-- Footer content will be loaded by utils.js -->
+    </footer>
+   <script src="assets/js/utils.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="assets/js/news.js"></script>
+<script src="assets/js/lang-tog-index.js"></script>
+</body>
+</html>
+</html>
