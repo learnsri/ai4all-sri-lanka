@@ -725,6 +725,17 @@ ul {
     100% { transform: translateX(0); }
 }
 
+/* Mobile versions use gap:18px so the seamless-loop offset is 9px (18/2) not 11px */
+@keyframes testimonialsScrollLeftMobile {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-50% - 9px)); }
+}
+
+@keyframes testimonialsScrollRightMobile {
+    0% { transform: translateX(calc(-50% - 9px)); }
+    100% { transform: translateX(0); }
+}
+
 /* ============================================
    FOOTER
    ============================================ */
@@ -1077,6 +1088,14 @@ footer {
 
     .testimonials-row {
         gap: 18px;
+    }
+
+    .testimonials-row-top {
+        animation-name: testimonialsScrollLeftMobile;
+    }
+
+    .testimonials-row-bottom {
+        animation-name: testimonialsScrollRightMobile;
     }
 
     .testimonial-message-card {
